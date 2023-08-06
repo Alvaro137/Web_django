@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir factura o introducir Datos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: #FFF;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin: 30px 0 20px;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+        form {
+            margin-bottom: 40px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        .manual-input {
+            text-align: center;
+        }
+        .manual-input button {
+            background-color: #007BFF;
+            color: #FFF;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Subir Factura o Introducir Datos</h1>
+    </header>
+    <main>
+        <h2>Subir Factura</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="id_bill_file">Selecciona tu factura:</label>
+            {{ form_upload.bill_file }}
+            <button type="submit" name="upload_bill">Subir factura</button>
+        </form>
+
+        <div class="manual-input">
+            <p>También puedes introducir los datos de tu factura de manera manual.</p>
+            <button onclick="window.location.href='{% url 'bill_upload:manual_input' %}'">Introducir manualmente</button>
+        </div>
+    </main>
+</body>
+</html>

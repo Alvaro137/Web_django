@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducir Datos de Factura Manualmente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: #FFF;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        form {
+            margin-bottom: 40px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background-color: #007BFF;
+            color: #FFF;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Introducir Datos de Factura Manualmente</h1>
+    </header>
+    <main>
+        <form method="post">
+            {% csrf_token %}
+            <label for="id_energy_contracted">Energía Contratada (kWh):</label>
+            {{ form.energy_contracted }}
+            <label for="id_price_per_kwh">Precio por kWh:</label>
+            {{ form.price_per_kwh }}
+            <label for="id_mail">Correo Electrónico:</label>
+            {{ form.mail }}
+            <button class="submit-btn" type="submit">Guardar Datos</button>
+        </form>
+    </main>
+</body>
+</html>

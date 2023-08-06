@@ -1,0 +1,228 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #150547;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 100px; /* Establece el ancho deseado para el logo */
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+}
+.cta-btn {
+    display: inline-block;
+    background-color: #150547;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-btn .cta-link {
+    display: block;
+    font: 400 15px/25px "Brandon Text", sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 13px;
+    font-size: 15px;
+    height: 27px;
+    line-height: 27px;
+    padding: 0 18px;
+    background: #ffffff;
+    color: #14d700;
+    border: 2px solid #14d700;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.cta-btn .cta-link:hover {
+    background-color: #ff8533;
+}
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 4rem 0;
+    background-color: #150547;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.feature-item {
+    text-align: center;
+    flex-basis: calc(50% - 1rem);
+    margin-bottom: 2rem;
+}
+
+.feature-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.feature-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item p {
+    font-size: 1.2rem;
+}
+
+.feature-item-fullwidth {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para la card */
+.feature-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+    padding: 1rem;
+    text-align: center;
+    max-width: 60%; /* Tamaño máximo del 60% del ancho de la pantalla */
+    width: 100%; /* Ocupar todo el ancho disponible */
+}
+
+
+
+
+
+
+
+
+/*Testimonials*/
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.testimonial {
+    text-align: center;
+    flex-basis: calc(50% - 1rem);
+    margin-bottom: 2rem;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    font-style: italic;
+    color: #777;
+}
+
+
+.cta-section {
+    text-align: center;
+    background-color: #000000;
+    padding: 4rem 0;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color:#ffffff
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn-large {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font: 400 15px/25px "Brandon Text", sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 35px;
+    font-size: 22px;
+    line-height: 69px;
+    margin: 32px auto 0;
+    max-width: 390px;
+    background: #61d33f;
+}
+
+.cta-btn-large:hover {
+    background-color: #7ba716;
+}
+
+
+
+
+/*footers */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}

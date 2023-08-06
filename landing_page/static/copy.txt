@@ -1,0 +1,64 @@
+{% extends 'layout.html' %}
+
+{% block title %}PowerSave - Ahorro Garantizado en tu Factura de Luz{% endblock %}
+
+{% block content %}
+
+<div class="home-hero">
+    <div class="home-hero__container">
+        <div class="home-hero__content">
+            <h1 class="home-hero__title">¡Ahorro Garantizado en tu Factura de Luz!</h1>
+            <h2 class="home-hero__subtitle">Nuestra comparativa personalizada te asegura siempre una oferta más barata
+                que tu factura actual.</h2>
+                <div class="home-hero__actions">
+                <a class="btn btn-primary" href="#">Empieza a ahorrar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="servicios-destacados" style="margin-top: 100px;">
+    <div class="container">
+        <h2>Servicios Destacados</h2>
+        <div class="service">
+            <!-- img src=" static 'images/service1.png' " alt="Comparativa Personalizada" -->
+            <h3>Comparativa Personalizada</h3>
+            <p>Nuestro equipo analizará tu factura de luz y te ofrecerá una comparativa personalizada con las mejores
+                ofertas disponibles.</p>
+        </div>
+        <div class="service">
+            <!-- img src=" static 'images/service2.png' " alt="Gestión Gratuita" -->
+
+            <h3>Gestión Gratuita</h3>
+            <p>Nuestra gestión y comparativa de facturas es completamente gratuita. No te cobramos ningún cargo
+                adicional por nuestros servicios.</p>
+        </div>
+        <div class="service">
+            <!-- img src=" static 'images/service2.png' " alt="Gestión Gratuita" -->
+
+            <h3>Ahorro Garantizado</h3>
+            <p>Te garantizamos que la oferta que elijas será siempre más económica que tu factura actual, asegurándote
+                un ahorro real.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contacta-con-nosotros">
+    <div class="container">
+        <h2>Contacta con Nosotros</h2>
+        <p>¿Tienes alguna pregunta o deseas obtener más información sobre nuestros servicios? Contáctanos y estaremos
+            encantados de ayudarte.</p>
+        <a href="#" class="btn btn-secondary">Contactar</a>
+    </div>
+</section>
+
+<section class="bill-upload">
+    <div class="container">
+        <h2>Sube tu Factura de Luz</h2>
+        <p>Si deseas obtener una comparativa personalizada y ahorrar en tu factura de luz, puedes subir tu factura en
+            formato imagen o PDF y nuestro equipo se pondrá en contacto contigo.</p>
+        <a href="#" class="btn btn-primary">Subir Factura</a>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'layout.html' %}
+
+{% block title %}PowerSave - Ahorro Garantizado en tu Factura de Luz{% endblock %}
+
+{% block content %}
+
+{% load static %}
+<section class="hero">
+    <div class="hero-content">
+        <h2>¡Ahorro Garantizado en tu Factura de Luz!</h2>
+        <p>Nuestra comparativa personalizada te asegura siempre una oferta más barata
+            que tu factura actual.</p>
+        <div class="cta-btn">
+            <a href="{% url 'bill_upload:upload_bill' %}" class="cta-link">¡Empieza a ahorrar!</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature-item feature-item-fullwidth">
+        <div class="feature-card"> <!-- Nuevo div para la card -->
+            <img src="{% static 'graphs.jpg' %}" alt="Feature 1">
+            <h3>Comparativa Personalizada</h3>
+            <p>Nuestro equipo analizará tu factura de luz y te ofrecerá una comparativa personalizada con las mejores
+                ofertas disponibles.</p>
+        </div>
+    </div>
+    <div class="feature-item feature-item-fullwidth">
+        <div class="feature-card"> <!-- Nuevo div para la card -->
+            <img src="image1.jpg" alt="Feature 1">
+            <h3>Gestión Gratuita</h3>
+            <p>Nuestra gestión y comparativa de facturas es completamente gratuita. No te cobramos ningún cargo
+                adicional por nuestros servicios.</p>
+        </div>
+    </div>
+    <div class="feature-item feature-item-fullwidth">
+        <div class="feature-card"> <!-- Nuevo div para la card -->
+            <img src="image1.jpg" alt="Feature 1">
+            <h3>Ahorro Garantizado</h3>
+            <p>Te garantizamos que la oferta que elijas será siempre más económica que tu factura actual, asegurándote
+                un ahorro real.</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="testimonial">
+        <img src="testimonial1.jpg" alt="Testimonial 1">
+        <p>"¡Increíble servicio! Ahora ahorro mucho más en mi factura de luz. ¡Gracias por todo!"</p>
+        <p class="testimonial-author">- Juan Pérez</p>
+    </div>
+    <div class="testimonial">
+        <img src="testimonial2.jpg" alt="Testimonial 2">
+        <p>"No puedo creer lo fácil que fue empezar a ahorrar con PowerSave. ¡Altamente recomendado!"</p>
+        <p class="testimonial-author">- María Gómez</p>
+    </div>
+    <!-- Agregar más testimonios aquí -->
+</section>
+
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Únete a cientos de clientes satisfechos</h2>
+        <p>¡Empieza a ahorrar en tu factura de luz hoy mismo!</p>
+        <a href="{% url 'bill_upload:upload_bill' %}" class="cta-btn-large">Regístrate Ahora</a>
+    </div>
+</section>
+
+{%endblock%}
