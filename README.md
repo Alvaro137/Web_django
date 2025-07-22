@@ -1,7 +1,8 @@
 # 🌐 Web Django — Aplicación Didáctica Full Stack
 
 **Proyecto de app web desarrollada con Django y Python (2023)**
-Diseñado como práctica completa de desarrollo web: incluye modelo de datos, formularios, procesamiento de archivos, envío de correos y despliegue.
+
+Diseñada como práctica completa de desarrollo web: incluye modelo de datos, formularios, procesamiento de archivos, envío de correos y despliegue.
 
 ---
 
